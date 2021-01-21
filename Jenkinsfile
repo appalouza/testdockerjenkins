@@ -17,8 +17,8 @@ pipeline {
                 }
             }
             steps {
-                bat "npm install curl grep"
-                bat "curl 'http://localhost:80' | grep 'Angular'"
+                sh "npm install curl grep"
+                sh "curl 'http://localhost:80' | grep 'Angular'"
             }
         }
     }
