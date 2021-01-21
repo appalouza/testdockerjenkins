@@ -17,6 +17,7 @@ pipeline {
                 }
             }
             steps {
+                sh "sudo apt install npm"
                 sh "npm install curl grep"
                 sh "curl 'http://localhost:80' | grep 'Angular'"
             }
