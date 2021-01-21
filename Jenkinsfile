@@ -14,6 +14,7 @@ pipeline {
             agent {
                 dockerfile {
                     filename 'Dockerfile'
+                    dir './src/test/'
                 }
             }
             steps {
